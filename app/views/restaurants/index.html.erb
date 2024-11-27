@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Restaurants" %>
+
+<h1>Restaurants</h1>
+<%= link_to '5 stars restaurants', top_restaurants_path, class: 'btn btn-info' %>
+<%= render "restaurants/list", restaurants: @restaurants %>
+
+
+<%= link_to "New restaurant", new_restaurant_path %>

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-4 shadow-lg p-4 bg-white mt-4">
+      <% content_for :title, "New restaurant" %>
+
+      <h1>New restaurant</h1>
+
+      <%= render "form", restaurant: @restaurant %>
+
+      <br>
+
+      <div>
+        <%= link_to "Back to restaurants", restaurants_path %>
+      </div>
+    </div>
+  </div>
+</div>
